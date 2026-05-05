@@ -1,0 +1,7 @@
+# Add project specific ProGuard rules here.
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep class com.bypass.** { *; }
