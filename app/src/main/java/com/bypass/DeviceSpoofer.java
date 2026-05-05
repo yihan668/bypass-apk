@@ -38,9 +38,9 @@ public class DeviceSpoofer {
             
             String json = new String(buffer, "UTF-8");
             config = new JSONObject(json);
-            Log.i(TAG, "閰嶇疆鍔犺浇鎴愬姛");
+            Log.i(TAG, "Config loaded");
         } catch (Exception e) {
-            Log.e(TAG, "閰嶇疆鍔犺浇澶辫触锛屼娇鐢ㄩ粯璁ゅ€?);
+            Log.e(TAG, "Config load failed, using defaults");
             config = getDefaultConfig();
         }
     }
@@ -70,7 +70,7 @@ public class DeviceSpoofer {
     public void spoofAll() {
         spoofBuild();
         spoofAndroidId();
-        Log.i(TAG, "鎵€鏈変吉瑁呭畬鎴?);
+        Log.i(TAG, "All spoofing completed");
     }
     
     private void spoofBuild() {
