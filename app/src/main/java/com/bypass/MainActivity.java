@@ -45,9 +45,9 @@ public class MainActivity extends Activity {
         appendLog("--- 鍔犺浇 SO ---");
         try {
             NativeLoader.loadJiagu();
-            appendLog("鐘舵€? 鍔犺浇鎴愬姛 鉁?);
+            appendLog("Status: Load success");
         } catch (Exception e) {
-            appendLog("鐘舵€? 鍔犺浇澶辫触 鉁?);
+            appendLog("Status: Load failed");
             appendLog("閿欒: " + e.getMessage());
             Log.e(TAG, "SO 鍔犺浇澶辫触", e);
         }
